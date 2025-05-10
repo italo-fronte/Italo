@@ -172,6 +172,8 @@ p {
 
 @media (min-width: 768px) {
     #cont {
+        width:720px;
+        height:200px;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
