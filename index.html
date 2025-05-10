@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Curriculo</title>
+    <title>Meu Currículo</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="script.js"></script>
 </head>
 <body>
     <header>
-      <img id="cap" src="imagens/capa002.jpg" atl="capa">
-        <img id="perfil" src="imagens/perfil001.jpg" atl="perfil">
+        <img id="cap" src="imagens/capa002.jpg" alt="Capa">
+        <img id="perfil" src="imagens/perfil001.jpg" alt="Perfil">
         <div id="back"></div>
         <nav id="menu">
             <ul>
@@ -26,23 +26,23 @@
     <section id="about">
         <h1>ITALO CARLOS LOPES</h1>
         <h2>Sobre mim</h2>
-        <p>E aí! Sou o Italo, um cara do interior de Minas Gerais, gente boa (pelo menos eu acho ), que curte animes, manhwas e livros, apesar de estar meio afastado das maratonas de anime ultimamente. Tenho me dedicado mais à leitura e ao treino físico, tentando manter tudo equilibrado. Solteiro aos 26 anos, com uma trajetória profissional que mais parece um menu degustação: já mexi com computação, lavoura de café, criei porcos e frangos, e fiz de tudo um pouco em serviços gerais. Gosto de uma boa companhia, mas às vezes um momento só comigo mesmo é tudo o que preciso. Sou o caçula e único homem entre cinco irmãos, na busca pela tão sonhada estabilidade e liberdade. No fim das contas, sou um cara simples, pé no chão, tentando encontrar meu caminho enquanto aproveito a jornada.</p>
+        <p>E aí! Sou o Italo, um cara do interior de Minas Gerais, gente boa (pelo menos eu acho 😆), que curte animes, manhwas e livros, apesar de estar meio afastado das maratonas de anime ultimamente. Tenho me dedicado mais à leitura e ao treino físico, tentando manter tudo equilibrado. Solteiro aos 26 anos, com uma trajetória profissional que mais parece um menu degustação: já mexi com computação, lavoura de café, criei porcos e frangos, e fiz de tudo um pouco em serviços gerais. Gosto de uma boa companhia, mas às vezes um momento só comigo mesmo é tudo o que preciso. Sou o caçula e único homem entre cinco irmãos, na busca pela tão sonhada estabilidade e liberdade. No fim das contas, sou um cara simples, pé no chão, tentando encontrar meu caminho enquanto aproveito a jornada.</p>
     </section>
 
     <section id="exp">
         <h2>Experiência Profissional</h2>
-           <div></div>
-          <p>Desenvolvedor front end junior</p>
-          <div></div>
-            <p>Grenjeiro</p>
-            <div></div>
-            <p>Servente de obras</p>
-            <div></div>
-            <p>Safrista</p>
-            <div></div>
-            <p>Serviços gerais</p>
-            <div></div>
-            <p>Talves do Job 😈</p>
+        <div></div>
+        <p>Desenvolvedor Front-End Júnior</p>
+        <div></div>
+        <p>Granjeiro</p>
+        <div></div>
+        <p>Servente de obras</p>
+        <div></div>
+        <p>Safrista</p>
+        <div></div>
+        <p>Serviços gerais</p>
+        <div></div>
+        <p>Talvez do Job 😈</p>
     </section>
 
     <section id="educ">
@@ -52,8 +52,9 @@
         <div></div>
         <p>Aprendendo com os erros</p>
     </section>
-
-<div id="cont">
+    
+    <div id="cont">
+    <!-- Card 1 -->
     <div class="card">
         <div id="carousel1" class="carousel">
             <div class="carousel-inner">
@@ -66,6 +67,7 @@
         </div>
     </div>
 
+    <!-- Card 2 -->
     <div class="card">
         <div id="carousel2" class="carousel">
             <div class="carousel-inner">
@@ -78,6 +80,7 @@
         </div>
     </div>
 
+    <!-- Card 3 -->
     <div class="card">
         <div id="carousel3" class="carousel">
             <div class="carousel-inner">
@@ -90,25 +93,33 @@
         </div>
     </div>
 </div>
-    
-    <div id="dis">
+
+<!-- Disqus Comentários -->
+<div id="dis">
     <div id="disqus_thread"></div>
-<script>
-    (function() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://italo-lopes.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
-    <script id="dsq-count-scr" src="//italo-lopes.disqus.com/count.js" async></script>
+
+    <script>
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://italo-lopes.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+
+    <noscript>
+        Por favor, habilite o JavaScript para visualizar os 
+        <a href="https://disqus.com/?ref_noscript">comentários via Disqus.</a>
+    </noscript>
+</div>
+
+<script id="dsq-count-scr" src="//italo-lopes.disqus.com/count.js" async></script>
+
     <footer id="foo">
-        <p>Eu estou criando essa pagina apenas para passar o meu tempo, não leve os resultados a serio.</p>
+        <p>Estou criando esta página apenas para passar o tempo, não leve os resultados a sério.</p>
         <p>Living without a north, aiming at one's own death.</p>
-        <p>esse site foi feito pelo android, então me de um desconto.</p>
-        <p>ainda em produção!</p>
+        <p>Este site foi feito pelo Android, então me dê um desconto. 😆</p>
+        <p>Ainda em produção!</p>
     </footer>
 </body>
 </html>
