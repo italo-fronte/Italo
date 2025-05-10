@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100vw;
     overflow-x: hidden;
     box-sizing: border-box;
     background-color: black;
@@ -166,16 +165,16 @@ p {
     display: flex;
     margin: 0 auto;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
     #cont {
         width:400px;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 }
 
