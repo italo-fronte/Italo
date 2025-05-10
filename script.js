@@ -1,28 +1,29 @@
-function iniciarCarrossel(id) {
-    const carousel = document.getElementById(id);
-    const imagens = carousel.children;
-    let index = 0;
-
-    // Esconde todas as imagens, menos a primeira
-    for (let i = 1; i < imagens.length; i++) {
-        imagens[i].style.opacity = "0";
-    }
-
-    setInterval(() => {
-        // Esconde todas as imagens
-        for (let i = 0; i < imagens.length; i++) {
-            imagens[i].style.opacity = "0";
-        }
-        
-        // Mostra a imagem atual
-        imagens[index].style.opacity = "1";
-        
-        index = (index + 1) % imagens.length;
-    }, 2000);
+function iniciarCarrossel(id, direcao) {
+  const carousel = document.getElementById(id).querySelector(".carousel-inner");
+  if (!carousel) {
+    console.error(`Erro: Não foi possível encontrar .carousel-inner dentro de #${id}`);
+    return;
+  }
+  
+  const imagens = carousel.children;
+  let index = 0;
+  const numImagens = imagens.length;
+  
+  function atualizarCarrossel() {
+    const containerWidth = carousel.parentElement.offsetWidth;
+    carousel.style.transform = `translateX(${direcao * index * containerWidth}px)`;
+  }
+  
+  atualizarCarrossel();
+  
+  setInterval(() => {
+    index = (index + 1) % numImagens;
+    atualizarCarrossel();
+  }, 3000);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    iniciarCarrossel("carousel1");
-    iniciarCarrossel("carousel2");
-    iniciarCarrossel("carousel3");
+  iniciarCarrossel("carousel1", -1);
+  iniciarCarrossel("carousel2", -1);
+  iniciarCarrossel("carousel3", -1);
 });
