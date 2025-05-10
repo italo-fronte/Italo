@@ -8,8 +8,9 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <header id="cap">
-      <img src="imagens/capa001.jpg" atl="capa miamoto">
+    <header>
+      <img id="cap" src="imagens/capa002.jpg" atl="capa">
+        <img id="perfil" src="imagens/perfil001.jpg" atl="perfil">
         <div id="back"></div>
         <nav id="menu">
             <ul>
@@ -19,10 +20,10 @@
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
-        <h1>Italo Lopes</h1>
     </header>
 
     <section id="about">
+        <h1>ITALO CARLOS LOPES</h1>
         <h2>Sobre mim</h2>
         <p>E aí! Sou o Italo, um cara do interior de Minas Gerais, gente boa (pelo menos eu acho ), que curte animes, manhwas e livros, apesar de estar meio afastado das maratonas de anime ultimamente. Tenho me dedicado mais à leitura e ao treino físico, tentando manter tudo equilibrado. Solteiro aos 26 anos, com uma trajetória profissional que mais parece um menu degustação: já mexi com computação, lavoura de café, criei porcos e frangos, e fiz de tudo um pouco em serviços gerais. Gosto de uma boa companhia, mas às vezes um momento só comigo mesmo é tudo o que preciso. Sou o caçula e único homem entre cinco irmãos, na busca pela tão sonhada estabilidade e liberdade. No fim das contas, sou um cara simples, pé no chão, tentando encontrar meu caminho enquanto aproveito a jornada.</p>
     </section>
@@ -32,7 +33,7 @@
            <div></div>
           <p>Desenvolvedor front end junior</p>
           <div></div>
-            <p>Granjeiro</p>
+            <p>Grenjeiro</p>
             <div></div>
             <p>Servente de obras</p>
             <div></div>
@@ -51,9 +52,10 @@
         <p>Aprendendo com os erros</p>
     </section>
 
-    <div id="cont">
-        <div class="card">
-            <div class="carousel" id="carousel1">
+<div id="cont">
+    <div class="card">
+        <div id="carousel1" class="carousel">
+            <div class="carousel-inner">
                 <img src="imagens/asta001.jpg" alt="Imagem 1">
                 <img src="imagens/asta002.jpg" alt="Imagem 2">
                 <img src="imagens/asta003.jpg" alt="Imagem 3">
@@ -61,8 +63,11 @@
                 <img src="imagens/asta005.jpg" alt="Imagem 5">
             </div>
         </div>
-        <div class="card">
-            <div class="carousel" id="carousel2">
+    </div>
+
+    <div class="card">
+        <div id="carousel2" class="carousel">
+            <div class="carousel-inner">
                 <img src="imagens/waifu001.jpg" alt="Imagem 6">
                 <img src="imagens/waifu002.jpg" alt="Imagem 7">
                 <img src="imagens/waifu003.jpg" alt="Imagem 8">
@@ -70,8 +75,11 @@
                 <img src="imagens/waifu005.jpg" alt="Imagem 10">
             </div>
         </div>
-        <div class="card">
-            <div class="carousel" id="carousel3">
+    </div>
+
+    <div class="card">
+        <div id="carousel3" class="carousel">
+            <div class="carousel-inner">
                 <img src="imagens/infer001.jpg" alt="Imagem 11">
                 <img src="imagens/infer002.jpg" alt="Imagem 12">
                 <img src="imagens/infer003.jpg" alt="Imagem 13">
@@ -80,19 +88,12 @@
             </div>
         </div>
     </div>
+</div>
+    
     <div id="dis">
     <div id="disqus_thread"></div>
 <script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
+    (function() {
     var d = document, s = d.createElement('script');
     s.src = 'https://italo-lopes.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
