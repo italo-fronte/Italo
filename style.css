@@ -82,23 +82,17 @@ p {
     color: white;
     font-weight: bold;
     text-align: center;
-    font-family: times new roman, serif;
-    font-style: italic;
 }
 
 #about h2 {
     color: white;
     font-weight: bold;
     text-align: center;
-    font-family: times new roman, serif;
-    font-style: italic;
 }
 
 #about p {
     color: white;
     text-align: justify;
-    font-family: times new roman, serif;
-    font-style: italic;
     margin:7px;
 }
 
@@ -115,8 +109,6 @@ p {
     color: white;
     font-weight: bold;
     text-align: center;
-    font-family: times new roman, serif;
-    font-style: italic;
 }
 
 #exp p {
@@ -126,8 +118,6 @@ p {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-family: times new roman, serif;
-    font-style: italic;
 }
 
 #exp div {
@@ -152,8 +142,6 @@ p {
     color: white;
     font-weight: bold;
     text-align: center;
-    font-family: times new roman, serif;
-    font-style: italic;
 }
 
 #educ p {
@@ -163,9 +151,6 @@ p {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-family: times new roman, serif;
-    font-style: italic;
-    
 }
 
 #educ div {
@@ -241,5 +226,4 @@ p {
     text-align: center;
     padding: 10px 10px;
     font-weight: bold;
-    font-style: italic;
     }
